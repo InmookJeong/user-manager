@@ -14,6 +14,9 @@ import kr.imjeong.user.constants.PageConstants;
 
 /**
  * Handles requests for the application home page.
+ * 
+ * @author In mook, Jeong
+ * @since 2022.10.04
  */
 @Controller
 public class HomeController {
@@ -23,13 +26,12 @@ public class HomeController {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = {"/", "/d"}, method = RequestMethod.GET)
+	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(HttpServletRequest request, Locale locale) {
 		logger.info("##### Access Main(About) Page.");
-		logger.debug("Request URL : " + request.getRequestURL());
-		logger.debug("Request URI : " + request.getRequestURI());
-		logger.debug("servlet Path : " + request.getServletPath());
-		request.setAttribute("url", "");
+		logger.info("#####    " + "- Request URL : " + request.getRequestURL());
+		logger.info("#####    " + "- Request URI : " + request.getRequestURI());
+		logger.info("#####    " + "- servlet Path : " + request.getServletPath());
 		
 		return PageConstants.HOME;
 	}
