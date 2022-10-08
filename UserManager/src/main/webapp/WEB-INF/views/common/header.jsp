@@ -16,7 +16,7 @@
 
 	<header id="topMenu" class="container-fluid border-bottom pt-2 pb-2 h-3-poring-5-rem">
 		<section class="row">
-			<section class="col-md-2 align-self-center font-weight-bold font-size-1-point-5-rem text-center">
+			<section id="logo" class="col-md-2 align-self-center font-weight-bold font-size-1-point-5-rem text-center">
 				MOOK-USER
 			</section>
 			

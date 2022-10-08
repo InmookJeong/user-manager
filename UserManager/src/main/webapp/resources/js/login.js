@@ -8,9 +8,9 @@ $(document).ready(function() {
 		} else {
 			$('.error-message[data-message-for="' + inputType + '"]').text('');
 		}
-	}).on('click', 'button[data-btn-type]', function() {
-		const btnType = $(this).data('btnType');
-		location.href = btnType;
+	}).on('click', 'button[data-forget-type]', function() {
+		const forgetType = $(this).data('forgetType');
+		location.href = "forget/" + forgetType;
 	});
 });
 

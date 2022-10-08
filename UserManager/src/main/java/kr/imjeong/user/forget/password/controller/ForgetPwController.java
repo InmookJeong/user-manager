@@ -1,4 +1,4 @@
-package kr.imjeong.user.common.controller;
+package kr.imjeong.user.forget.password.controller;
 
 import java.util.Locale;
 
@@ -12,28 +12,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import kr.imjeong.user.constants.PageConstants;
 
-/**
- * Handles requests for the application home page.
- * 
- * @author In mook, Jeong
- * @since 2022.10.04
- */
 @Controller
-public class HomeController {
+@RequestMapping(value = "/forget")
+public class ForgetPwController {
+
+	private static final Logger logger = LoggerFactory.getLogger(ForgetPwController.class);
 	
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-	
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
-	@RequestMapping(value = {"/", "/about"}, method = RequestMethod.GET)
-	public String home(HttpServletRequest request, Locale locale) {
-		logger.info("##### Access Main(About) Page.");
+	@RequestMapping(value = "password", method = RequestMethod.GET)
+	public String forgetPassword(HttpServletRequest request, Locale locale) {
+		logger.info("##### Access Forget Password Page.");
 		logger.info("#####    " + "- Request URL : " + request.getRequestURL());
 		logger.info("#####    " + "- Request URI : " + request.getRequestURI());
 		logger.info("#####    " + "- servlet Path : " + request.getServletPath());
 		
-		return PageConstants.HOME;
+		return PageConstants.FIND_PW;
 	}
-	
 }

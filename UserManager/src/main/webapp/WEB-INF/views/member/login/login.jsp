@@ -17,8 +17,8 @@
 				<span class="error-message text-danger" data-message-for="password"></span>
 				<div class="pb-3"></div>
 				<button type="button" class="btn btn-primary">Login</button>
-				<button type="button" class="btn btn-warning float-right ml-1" data-btn-type="find-pw">PW 찾기</button>
-				<button type="button" class="btn btn-warning float-right ml-1" data-btn-type="find-id">ID 찾기</button>
+				<button type="button" class="btn btn-warning float-right ml-1" data-forget-type="password">PW 찾기</button>
+				<button type="button" class="btn btn-warning float-right ml-1" data-forget-type="id">ID 찾기</button>
 			</article>
 		</section>
 	</section>

@@ -1,4 +1,4 @@
-package kr.imjeong.user.member.login.controller;
+package kr.imjeong.user.forget.id.controller;
 
 import java.util.Locale;
 
@@ -13,18 +13,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import kr.imjeong.user.constants.PageConstants;
 
 @Controller
-public class LoginController {
+@RequestMapping(value = "/forget")
+public class ForgetIdController {
+
+	private static final Logger logger = LoggerFactory.getLogger(ForgetIdController.class);
 	
-	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
-	
-	@RequestMapping(value = {"/login"}, method = RequestMethod.GET)
-	public String home(HttpServletRequest request, Locale locale) {
-		logger.info("##### Access Login Page.");
+	@RequestMapping(value = "id", method = RequestMethod.GET)
+	public String forgetId(HttpServletRequest request, Locale locale) {
+		logger.info("##### Access forget ID Page.");
 		logger.info("#####    " + "- Request URL : " + request.getRequestURL());
 		logger.info("#####    " + "- Request URI : " + request.getRequestURI());
 		logger.info("#####    " + "- servlet Path : " + request.getServletPath());
 		
-		return PageConstants.LOG_IN;
+		return PageConstants.FIND_ID;
 	}
-
 }
