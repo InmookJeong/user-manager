@@ -19,7 +19,7 @@ public class ForgetPwController {
 	private static final Logger logger = LoggerFactory.getLogger(ForgetPwController.class);
 	
 	@RequestMapping(value = "password", method = RequestMethod.GET)
-	public String forgetPassword(HttpServletRequest request, Locale locale) {
+	public String viewForgetPasswordPage(HttpServletRequest request, Locale locale) {
 		logger.info("##### Access Forget Password Page.");
 		logger.info("#####    " + "- Request URL : " + request.getRequestURL());
 		logger.info("#####    " + "- Request URI : " + request.getRequestURI());

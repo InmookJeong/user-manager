@@ -27,7 +27,7 @@ public class HomeController {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = {"/", "/about"}, method = RequestMethod.GET)
-	public String home(HttpServletRequest request, Locale locale) {
+	public String viewHomePage(HttpServletRequest request, Locale locale) {
 		logger.info("##### Access Main(About) Page.");
 		logger.info("#####    " + "- Request URL : " + request.getRequestURL());
 		logger.info("#####    " + "- Request URI : " + request.getRequestURI());

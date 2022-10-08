@@ -18,7 +18,7 @@ public class LoginController {
 	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
 	
 	@RequestMapping(value = {"/login"}, method = RequestMethod.GET)
-	public String home(HttpServletRequest request, Locale locale) {
+	public String viewLoginPage(HttpServletRequest request, Locale locale) {
 		logger.info("##### Access Login Page.");
 		logger.info("#####    " + "- Request URL : " + request.getRequestURL());
 		logger.info("#####    " + "- Request URI : " + request.getRequestURI());

@@ -19,7 +19,7 @@ public class ForgetIdController {
 	private static final Logger logger = LoggerFactory.getLogger(ForgetIdController.class);
 	
 	@RequestMapping(value = "id", method = RequestMethod.GET)
-	public String forgetId(HttpServletRequest request, Locale locale) {
+	public String viewForgetIdPage(HttpServletRequest request, Locale locale) {
 		logger.info("##### Access forget ID Page.");
 		logger.info("#####    " + "- Request URL : " + request.getRequestURL());
 		logger.info("#####    " + "- Request URI : " + request.getRequestURI());
