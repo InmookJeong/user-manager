@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import kr.imjeong.user.constants.PageConstants;
+import kr.imjeong.user.constants.ViewConstants;
 
 /**
  * Handles requests for the application home page.
@@ -33,7 +33,7 @@ public class HomeController {
 		logger.info("#####    " + "- Request URI : " + request.getRequestURI());
 		logger.info("#####    " + "- servlet Path : " + request.getServletPath());
 		
-		return PageConstants.HOME;
+		return ViewConstants.VIEW_HOME_PAGE;
 	}
 	
 }

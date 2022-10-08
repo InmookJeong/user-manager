@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import kr.imjeong.user.constants.PageConstants;
+import kr.imjeong.user.constants.ViewConstants;
 
 @Controller
 public class LoginController {
@@ -24,7 +24,7 @@ public class LoginController {
 		logger.info("#####    " + "- Request URI : " + request.getRequestURI());
 		logger.info("#####    " + "- servlet Path : " + request.getServletPath());
 		
-		return PageConstants.LOG_IN;
+		return ViewConstants.VIEW_LOGIN_PAGE;
 	}
 
 }
